@@ -21,6 +21,7 @@
 		64C6C11117F3314F00240B64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C6C0F317F3314F00240B64 /* UIKit.framework */; };
 		64C6C11917F3314F00240B64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64C6C11717F3314F00240B64 /* InfoPlist.strings */; };
 		64C6C11B17F3314F00240B64 /* HappinessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C6C11A17F3314F00240B64 /* HappinessTests.m */; };
+		64C6C12617F3340100240B64 /* SCSCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C6C12517F3340100240B64 /* SCSCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		64C6C11617F3314F00240B64 /* HappinessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HappinessTests-Info.plist"; sourceTree = "<group>"; };
 		64C6C11817F3314F00240B64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		64C6C11A17F3314F00240B64 /* HappinessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappinessTests.m; sourceTree = "<group>"; };
+		64C6C12417F3340100240B64 /* SCSCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSCircleView.h; sourceTree = "<group>"; };
+		64C6C12517F3340100240B64 /* SCSCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				64C6C0FE17F3314F00240B64 /* SCSAppDelegate.h */,
 				64C6C0FF17F3314F00240B64 /* SCSAppDelegate.m */,
 				64C6C10117F3314F00240B64 /* Main.storyboard */,
+				64C6C12417F3340100240B64 /* SCSCircleView.h */,
+				64C6C12517F3340100240B64 /* SCSCircleView.m */,
 				64C6C10417F3314F00240B64 /* SCSViewController.h */,
 				64C6C10517F3314F00240B64 /* SCSViewController.m */,
 				64C6C10717F3314F00240B64 /* Images.xcassets */,
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C6C12617F3340100240B64 /* SCSCircleView.m in Sources */,
 				64C6C10017F3314F00240B64 /* SCSAppDelegate.m in Sources */,
 				64C6C0FC17F3314F00240B64 /* main.m in Sources */,
 				64C6C10617F3314F00240B64 /* SCSViewController.m in Sources */,
