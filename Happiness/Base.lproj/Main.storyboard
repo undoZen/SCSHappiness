@@ -19,10 +19,34 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61l-LH-UIb" customClass="SCSCircleView">
                                 <rect key="frame" x="50" y="174" width="220" height="220"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHq-fS-QQ9" userLabel="Left Eye" customClass="SCSCircleView">
+                                        <rect key="frame" x="50" y="60" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="1UN-c3-A8U"/>
+                                            <constraint firstAttribute="width" constant="30" id="NqZ-mZ-rCT"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hpn-a3-FTN" userLabel="Right Eye" customClass="SCSCircleView">
+                                        <rect key="frame" x="140" y="60" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="WqJ-Ad-nHT"/>
+                                            <constraint firstAttribute="width" constant="30" id="eU6-VZ-Bx2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="2Aj-OC-Nbl"/>
+                                    <constraint firstItem="Hpn-a3-FTN" firstAttribute="top" secondItem="61l-LH-UIb" secondAttribute="top" constant="60" id="axw-Ax-BGV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hpn-a3-FTN" secondAttribute="trailing" constant="50" id="gtU-ml-tZK"/>
                                     <constraint firstAttribute="height" constant="220" id="kMM-WX-ojs"/>
+                                    <constraint firstItem="oHq-fS-QQ9" firstAttribute="top" secondItem="61l-LH-UIb" secondAttribute="top" constant="60" id="rkY-hO-SHC" userLabel="Vertical Space - (60) - View - Circle View"/>
+                                    <constraint firstItem="oHq-fS-QQ9" firstAttribute="leading" secondItem="61l-LH-UIb" secondAttribute="leading" constant="50" id="z06-E8-gsc"/>
                                 </constraints>
                             </view>
                         </subviews>
