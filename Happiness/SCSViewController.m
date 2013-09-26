@@ -7,12 +7,18 @@
 //
 
 #import "SCSViewController.h"
+#import "SCSCircleView.h"
 
 @interface SCSViewController ()
+@property (weak, nonatomic) IBOutlet SCSCircleView *faceView;
 
 @end
 
 @implementation SCSViewController
+- (IBAction)adjustScale:(UISlider *)sender {
+    CGFloat scale = sender.value;
+    self.faceView.transform = CGAffineTransformMakeScale(scale, scale);
+}
 
 - (void)viewDidLoad
 {
