@@ -49,6 +49,7 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="2Aj-OC-Nbl"/>
                                     <constraint firstItem="Hpn-a3-FTN" firstAttribute="top" secondItem="61l-LH-UIb" secondAttribute="top" constant="60" id="axw-Ax-BGV"/>
@@ -57,26 +58,32 @@
                                     <constraint firstItem="oHq-fS-QQ9" firstAttribute="top" secondItem="61l-LH-UIb" secondAttribute="top" constant="60" id="rkY-hO-SHC" userLabel="Vertical Space - (60) - View - Circle View"/>
                                     <constraint firstItem="oHq-fS-QQ9" firstAttribute="leading" secondItem="61l-LH-UIb" secondAttribute="leading" constant="50" id="z06-E8-gsc"/>
                                 </constraints>
-                            </view>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.01" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tul-Zb-sWq">
-                                <rect key="frame" x="48" y="402" width="224" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="adjustScale:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Rhm-DM-2Vh"/>
+                                    <outletCollection property="gestureRecognizers" destination="tDq-Tw-5VE" appends="YES" id="33I-JE-xbd"/>
                                 </connections>
-                            </slider>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="61l-LH-UIb" secondAttribute="centerX" id="7hi-3n-WBh"/>
                             <constraint firstAttribute="centerY" secondItem="61l-LH-UIb" secondAttribute="centerY" id="ecp-0I-vjj"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="AiM-YJ-xdA" appends="YES" id="0Ev-lb-igP"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="faceView" destination="61l-LH-UIb" id="rVv-Tb-kEz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="AiM-YJ-xdA">
+                    <connections>
+                        <action selector="adjustScale:" destination="vXZ-lx-hvc" id="TXM-tv-tMl"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="tDq-Tw-5VE"/>
             </objects>
         </scene>
     </scenes>

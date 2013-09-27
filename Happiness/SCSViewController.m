@@ -15,8 +15,9 @@
 @end
 
 @implementation SCSViewController
-- (IBAction)adjustScale:(UISlider *)sender {
-    CGFloat scale = sender.value;
+- (IBAction)adjustScale:(UIPinchGestureRecognizer *)sender {
+    CGFloat scale = MIN(sender.scale, 1);
+    scale = MAX(scale, 0.01);
     self.faceView.transform = CGAffineTransformMakeScale(scale, scale);
 }
 

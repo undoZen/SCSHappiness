@@ -49,4 +49,13 @@
     [smile stroke];
 }
 
+- (IBAction)adjustSmile:(UIPanGestureRecognizer *)sender {
+    CGFloat yValue = [sender locationInView:self].y;
+    CGFloat bottomYValue = self.bounds.size.height;
+    yValue = MIN(yValue, bottomYValue);
+    yValue = MAX(yValue, 0);
+    controlPoint = CGPointMake(controlPoint.x, yValue);
+    [self setNeedsDisplay];
+}
+
 @end
